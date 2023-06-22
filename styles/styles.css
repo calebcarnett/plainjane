@@ -91,7 +91,6 @@ h1 {
     object-fit:cover;
   }
   .carousel {
-    
     margin: auto;
   }
 
@@ -148,3 +147,39 @@ h1 {
     background-color: pink;
     color: rgb(19, 18, 19);
  }
+
+ .overlay {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+
+ .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.image-container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr); /* Creates 3 rows with equal height */
+    grid-template-columns: repeat(3, 1fr); /* Creates 2 columns with equal width */
+  }
+
+  .card-img-top {
+    width: 80%;
+    height: 25vw;
+    object-fit: cover;
+  }

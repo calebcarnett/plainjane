@@ -1,0 +1,41 @@
+<!-- <p>Have an event coming up? Fill out the form below to get started!  
+        After the form is submitted, I will email you with a price quote. From there, if you would like to proceed,  I ask you for payment to get you on the calendar!
+        
+        *You are not obligated to submit payment for your order upon filling out this form.*</p> -->
+
+<form action="https://formspree.io/f/xknadaaz" method="POST" class="form-group">
+  <div class="grid-container">
+    <label>
+      First Name:
+      <input class="form-control" type="text" name="firstname" required />
+    </label>
+    <label>
+      Last Name:
+      <input class="form-control" type="text" name="lastname" required />
+    </label>
+    <label>
+      Event Date:
+      <input class="form-control" type="date" name="date" required />
+    </label>
+    <label>
+      Your Email:
+      <input class="form-control" type="email" name="email" required />
+    </label>
+    <label>
+      Phone Number:
+      <input class="form-control" type="tel" name="phone" required />
+    </label>
+
+    <label>
+      Number of Cookies:
+      <input class="form-control" type="number" name="number" required />
+    </label>
+  </div>
+  <label class="event-details">
+    Details of the Event and Theme:
+    <textarea class="form-control event-details" name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <br />
+  <button type="submit" class="btn btn-primary">Request Quote!</button>
+</form>
