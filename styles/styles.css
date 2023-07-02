@@ -1,23 +1,18 @@
+/*Global styles */
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-background-color: rgb(248, 248, 248);
+  background-color: whitesmoke;
 }
+
+/*Navigation bar styling */
   #navbarNav {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 70px;
-}
-
-.sweet-text {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: white;
 }
 
 .navbar-nav {
@@ -43,21 +38,14 @@ background-color: rgb(248, 248, 248);
 } 
 
 @media (max-width: 992px) {
-    .nav-link{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-    }  
+  .nav-link{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+  }  
 }
 
-/* .navigation-bar {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: rgb(228,192,237);
-    background: linear-gradient(90deg, rgba(228,192,237,1) 3%, rgba(255,255,255,1) 50%, rgba(228,192,237,1) 98%);
-} */
-
+/*Logo styling */
 .cookie-logo {
   height: 300px;
   position: relative;
@@ -84,45 +72,49 @@ background-color: rgb(248, 248, 248);
    padding-right: 10px;
 }
 
-.carousel-item img  {
-    max-height: 800px;
-    border-radius: 35px;
-    margin: auto;
-    object-fit:cover;
-  }
-  .carousel {
-    margin: auto;
-  }
-
-  .about-bio {
-    display: flex;
-    flex-direction: column;
+/*Home and about us styling */
+.image-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."; 
+    justify-items: center;
     align-items: center;
-    width: 50%;
-  }
+    margin-bottom: 40px;
+}
 
-  .about-section {
-    background-color: pink;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-  }
+.card-img-top {
+  width: 40vw;
+}
+.card-img-bottom {
+  width: 30vw;
+}
 
-  .wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+@media (max-width: 500px) {
+  .image-container {
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  grid-template-areas: 
+    "."; 
+  }  
+  .card-img-top {
+    width: 80vw;
   }
+  .card-img-bottom {
+    width: 80vw;
+  }
+  
+}
 
-/* body {
-    background: rgb(228,192,237);
-    background: linear-gradient(90deg, rgba(228,192,237,1) 3%, rgba(255,255,255,1) 50%, rgba(228,192,237,1) 98%);
-  } */
+/*Form styling */
+.container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
 
   .form-group {
     margin: auto;
@@ -137,12 +129,6 @@ background-color: rgb(248, 248, 248);
     width: 100%;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr); /* Creates 3 rows with equal height */
-    grid-template-columns: repeat(3, 1fr); /* Creates 2 columns with equal width */
-    gap: 5px; /* Adds a gap of 10px between grid items */
-  }
  
   .form-control {
     background-color: pink;
@@ -158,14 +144,6 @@ background-color: rgb(248, 248, 248);
     right: 0;
     bottom: 0;
  }
-
- .container {
-  width: 50vw;
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
   .centered {
     position: absolute;
     font-weight: 500;
@@ -175,8 +153,11 @@ background-color: rgb(248, 248, 248);
     transform: translate(-50%, -50%);
   }
 
-  .card-img-top {
-    width: 80%;
-    height: 25vw;
-    object-fit: cover;
+  /* Gallery styles */
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* Creates 3 rows with equal height */
+    grid-template-columns: repeat(3, 1fr); /* Creates 2 columns with equal width */
+    gap: 5px; /* Adds a gap of 10px between grid items */
   }
+
