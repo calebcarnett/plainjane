@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background: rgb(245, 235, 247);
+  background-size:contain;
 }
 
 /*Navigation bar styling */
@@ -40,7 +41,7 @@ body {
   background-repeat: repeat-x;
   position:relative;
   width: 100%;
-  height: 25vh;
+  height: 15vh;
 }
 
 @media (max-width: 992px) {
@@ -200,6 +201,7 @@ form {
 
 /* Footer styling */
 footer {
+  margin-top: 30px;
   background: rgb(228, 192, 237);
   background: linear-gradient(
     90deg,
