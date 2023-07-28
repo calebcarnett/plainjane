@@ -145,7 +145,6 @@ body {
 .form-section {
   background: url(../images/melting-background.svg);
   background-size:contain;
-  margin-bottom: 40px;
 }
 
 .form-section h1, p {
@@ -211,7 +210,6 @@ form {
 
 /* Footer styling */
 footer {
-  margin-top: 30px;
   background: rgb(228, 192, 237);
   background: linear-gradient(
     90deg,
@@ -223,6 +221,9 @@ footer {
 
 
 .gallery-container {  
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(219, 234, 247);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1.5fr 1.5fr; 
